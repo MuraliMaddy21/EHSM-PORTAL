@@ -1,0 +1,53 @@
+.style
+{
+	font-weight: bold;
+}
+.style1
+{
+	margin-left:3rem;
+}
+
+body {
+  background-image: url('../SAP_logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.risk{
+	margin-left:2rem;
+}
+.loginbg
+{
+
+ background-image: url(https://img.freepik.com/free-vector/scientists-studying-neural-connections-programmers-writing-codes-machine-brain_74855-14157.jpg?w=996&t=st=1676468432~exp=1676469032~hmac=003a63589de2f7585fef1e36ca7ac52f300f0e2c736f61e5d7efd2142fdbae9f);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+.incbg
+{
+
+ background-image: url(http://mercomindia.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/01/Untitled-design-90.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+ 
+}
+
+.riskbg
+{
+
+ background-image: url(https://hungarytoday.hu/wp-content/uploads/2022/10/industry-g067238cd0_1920.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+.text
+{
+	color:#000000;
+	background-color:white;
+}

@@ -1,0 +1,132 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "EHSM-PORTALEHSM-PORTAL",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"Z_EHSM_ODATA_MURALI_SRV": {
+				"uri": "/sap/opu/odata/sap/Z_EHSM_ODATA_MURALI_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "EHSM-PORTALEHSM-PORTAL.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "EHSM-PORTALEHSM-PORTAL.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "View1",
+					"viewLevel": 1,
+					"clearControlAggregation": false
+				},
+				"View2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View2",
+					"viewLevel": 2
+				},
+				"View3": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View3",
+					"viewLevel": 3
+				}
+			},
+			"config": {
+				"viewPath": "EHSM-PORTALEHSM-PORTAL.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"routerClass": "sap.m.routing.Router",
+				"viewLevel": 1,
+				"clearControlAggregation": false,
+				"async": true
+			},
+			"routes": [{
+				"name": "View1",
+				"pattern": "View1",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View1"]
+			}, {
+				"name": "View2",
+				"pattern": "View2",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View2"]
+			}, {
+				"name": "View3",
+				"pattern": "View3",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View3"]
+			}]
+		}
+	}
+}

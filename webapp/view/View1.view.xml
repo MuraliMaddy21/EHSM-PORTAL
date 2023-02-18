@@ -1,0 +1,63 @@
+<mvc:View controllerName="EHSM-PORTALEHSM-PORTAL.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" 
+xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<App id="app" class="style">
+		<pages>
+			<Page title="{i18n>title}" class="loginbg">
+				<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Bar>
+		<contentMiddle>
+			<Text text="KAAR TECHNOLOGIES 2023"></Text>
+		</contentMiddle>
+		</Bar>
+			</OverflowToolbar>
+		</footer>
+	
+				<content>
+						<Image src="../KT_15_Logo.png" width="300px" height="200px" class="style1"></Image>
+					
+					<f:SimpleForm id="SimpleFormChange354"
+			editable = "true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >	
+	
+			<f:content height="100px">
+				<Label text="USERID" />
+				<Input id="userid" 	type="Number"/>
+				<Label text="PASSWORD"  />
+				<Input id="password" 	type="Password" />
+			</f:content>			
+					</f:SimpleForm>
+            
+					<FlexBox
+			   height="100px"
+			   alignItems="Start"
+			   justifyContent="Center">
+				<Button text="LOGIN" type="Emphasized" press="OnSubmit"></Button>
+				 <BusyIndicator id="spinner" size="3rem"/>
+			</FlexBox>
+	      
+	
+		
+			
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
